@@ -12,6 +12,8 @@ internal class Program
 
             Console.WriteLine("DataBase was connected!\n");
 
+            // first part (20.12)
+
             //db.GetClients(Constants.GetAllClients);
             //db.GetString(Constants.GetAllEmails);
             //db.GetString(Constants.GetAllSections);
@@ -24,15 +26,50 @@ internal class Program
 
             //db.insertString(Constants.InsertCountry, "Japan");
             //db.GetString(Constants.GetAllCountries);
-            //db.updateString(Constants.UpdateCountry,2, "China");
+            //db.updateString(Constants.UpdateCountry, 4, "China");
             //db.GetString(Constants.GetAllCountries);
-            //db.deleteString(Constants.DeleteCountry,2);
+            //db.deleteString(Constants.DeleteCountry, 4);
             //db.GetString(Constants.GetAllCountries);
 
-            db.GetString(Constants.GetCitiesInCountry, "Ukraine");
-            db.GetString(Constants.GetSectionsByUser, "Motvei Viktorenko");
-            db.GetPromo(Constants.GetPromoBySection, "PC and accessories");
+            //db.GetString(Constants.GetCitiesInCountry, "Ukraine");
+            //db.GetString(Constants.GetSectionsByUser, "Motvei Viktorenko");
+            //db.GetPromo(Constants.GetPromoBySection, "PC and accessories");
 
+            // second part (21.12)
+
+            //db.GetIntStringFromSP("ClientsCountByCity");
+            //db.GetIntStringFromSP("ClientsCountByCountry");
+            //db.GetIntStringFromSP("CitiesCountByCountry");
+            //db.GetIntFromSP("AvgCitiesInAllCountries");
+
+            //db.GetStringFromSP("SectionsOfClientsByCountry", "Ukraine");
+            //db.GetStringFromSP("PromoBySectionAndDate", "PC and accessories", new DateTime(2023, 9, 10), new DateTime(2023, 12, 1));
+            //db.GetPromoFromSP("PromoByClient", "Motvei Viktorenko");
+
+            //db.GetStringFromSP("top3CountryByClients");
+            //db.GetStringFromSP("top1CountryByClients");
+            //db.GetStringFromSP("top3CityByClients");
+            //db.GetStringFromSP("top1CityByClients");
+
+            //db.GetStringFromSP("top3PromoSection");
+            //db.GetStringFromSP("top1PromoSection");
+            //db.GetStringFromSP("topMinus3PromoSection");
+            //db.GetStringFromSP("topMinus1PromoSection");
+            //db.GetStringFromSP("top3PopularSection");
+            //db.GetStringFromSP("top1PopularSection");
+            //db.GetStringFromSP("top3UnPopularSection");
+            //db.GetStringFromSP("top3UnPopularSection");
+
+            //db.GetPromoFromSP("Promo3daysBeforeEnd");
+            //db.GetPromoFromSP("PromoThatEnded");
+
+            //db.GetIntStringFromSP("AvgAgeBySection");
+            //db.GetIntStringFromSP("AvgAgeByCity");
+            //db.GetIntStringFromSP("AvgAgeByCountry");
+
+            //db.GetStringStringFromSP("Top3SectionBySex");
+            //db.GetIntStringFromSP("ClientsBySex");
+            db.GetStringStringIntFromSP("ClientsBySexAndCountry");
         }
         catch (SqlException ex)
         {
